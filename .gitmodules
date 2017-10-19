@@ -1,0 +1,3 @@
+[submodule "httpd/eclipse.org-common"]
+	path = httpd/eclipse.org-common
+	url = https://git.eclipse.org/r/www.eclipse.org/eclipse.org-common
