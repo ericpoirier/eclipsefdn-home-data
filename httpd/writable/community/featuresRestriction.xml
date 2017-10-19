@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<features>
+	<item>org.eclipse.birt</item>
+	<item>org.eclipse.recommenders.feature.rcp</item>
+	<item>org.eclipse.cdt</item>
+	<item>org.eclipse.datatools.intro</item>
+	<item>org.eclipse.egit</item>	
+	<item>org.eclipse.jdt</item>	
+	<item>org.eclipse.jst.enterprise_ui.feature</item>
+	<item>org.eclipse.wst.jsdt.feature</item>
+	<item>org.eclipse.jubula.feature</item>
+	<item>org.eclipse.m2e.feature</item>
+	<item>org.eclipse.mylyn_feature</item>
+	<item>org.eclipse.php</item>
+        <item>org.eclipse.ptp</item>
+	<item>org.eclipse.pde</item>
+	<item>org.eclipse.rse</item>
+     	<item>org.eclipse.rap.tools.feature</item>
+        <item>org.eclipse.recommenders.rcp.feature</item>  
+	<item>org.eclipse.scout</item>
+	<item>org.eclipse.wb.core.feature</item>
+	<item>org.eclipse.wst.xml_ui.feature</item>
+	<item>org.eclipse.xtend.sdk;org.eclipse.xtend</item>
+	<item>org.eclipse.xtext.sdk;org.eclipse.xtext.runtime</item>	
+</features>
