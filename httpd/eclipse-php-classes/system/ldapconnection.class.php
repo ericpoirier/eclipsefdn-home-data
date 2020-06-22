@@ -118,6 +118,34 @@ class LDAPConnection {
     }
     return FALSE;
   }
+  
+  /**
+   * Get the Group Name by Group ID
+   * 
+   * @param unknown $_gid
+   * 
+   * @return mixed|boolean
+   */
+  function getGroupByGid($_gid) { 
+    if ($_ds == NULL) { 
+      $ds = ldap_connect($this->LdapUrl); 
+      ldap_set_option($ds, LDAP_OPT_PROTOCOL_VERSION, 3); 
+    }
+    else {
+      $ds = $_ds;
+    }
+    if ($ds) { 
+      if(is_int($_gid)) { 
+        # Perform a lookup.
+        $sr = ldap_search($ds, "ou=group," . $this->LdapDn, "(gidNumber=$_gid)", array("cn")); 
+        $info = ldap_get_entries($ds, $sr); 
+        if($info["count"] > 0) { 
+          return $info[0]["cn"][0];
+        }
+      }
+    }
+    return FALSE;
+  }
 
   /**
    * Performs a look up of a given UID
